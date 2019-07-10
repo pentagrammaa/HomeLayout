@@ -1,0 +1,1078 @@
+body {
+    font-family: "Times New Roman", sans-serif;
+    background-color: antiquewhite;
+}
+main {
+    margin: 50px;
+}
+header {
+    line-height: 6px;
+    text-align: center;
+}
+#house {        /* 505" from bedroom back wall to front door extra 86" to window */
+    width: 770px;    /* 285" up and down */
+    height: 392px;
+    brder: 1px groove black;
+    display: grid;
+    grid-template-columns: 117px 159px 187px 107px 179px 21px;
+    grid-template-rows: 124px 20px 41px 207px;
+    grid-template-areas:
+        ". foyer office bathroom bedroom bedroom"
+        ". foyer office hall bedroom bedroom"
+        "living living office hall bedroom bedroom"
+        "living living dining kitchen kitchen .";
+    background-color:antiquewhite;  
+}
+#foyer {        /* 122" left and right 106" up and down */
+    position: relative;
+    grid-area: foyer;
+    text-align: center;
+    border: 1px groove black; 
+}
+#foyer #office_closet {  /* 59"  by 39"  */
+    position: absolute;
+    background-color: antiquewhite;
+    border: 1px groove black;
+    height: 77px;
+    width: 51px;
+    right: -1px;
+    bottom: 64px;
+}
+#foyer #foyer_bench {  /* 48"  by 17"  */
+    position: absolute;
+    background-color: burlywood;
+    border: 1px groove black;
+    height: 62px;
+    width: 22px;
+    right: 51px;
+    bottom: 61px;
+}
+#foyer #foyer_outside_door {   /* 36" wide  */
+    position: absolute;
+    background-color: brown;
+    height: 47px;
+    width: 6px;
+    left: -3px;
+    bottom: 45px;
+}
+#foyer #foyer_living_opening {  /* 72.5" wide */
+    position: absolute;
+    background-color: antiquewhite;
+    height: 4px;
+    width: 94px;
+    left: 8px;
+    bottom: -4px;
+    z-index: 3;
+}
+#foyer #foyer_shoerack {   /* 33.5 by 12  */
+    position: absolute;
+    background-color: dimgray;
+    border: 1px groove black;
+    height: 16px;
+    width: 43px;
+    left: 32px;
+    top: -1px;
+}
+#foyer #foyer_table {  /* 31" by 16" */
+    position: absolute;
+    background-color: burlywood;
+    border: 1px groove black;
+    height: 40px;
+    width: 21px;
+    left: -1px;
+    top: -1px;
+}
+#office {       /* 144" left and right  130" up and down */
+    text-align: center;
+    font-size: 12px;
+    position: relative;
+    grid-area: office;
+    border: 1px groove black; 
+}
+#office #bookshelf1 {  /* 95.5 by 15 */
+    position: absolute;
+    background-color: burlywood;
+    border: 1px groove black;
+    height: 20px;
+    width: 124px;
+    left: -1px;
+    bottom: -1px;
+}
+#office #bookshelf2 {   /* 20" left/right by 27" up/down */
+    position: absolute;
+    background-color: burlywood;
+    border: 1px groove black;
+    height: 35px;
+    width: 26px;
+    left: -1px;
+    bottom: 20px;
+}
+#office #computer_table { 
+    position: absolute;
+    background-color: burlywood;
+    border: 1px groove black;
+    height: 55px;
+    width: 35px;
+    right: -1px;
+    top: 49px;
+}
+#office #costume_cabinet {   /* 33" by 16.5"  */
+    position: absolute;
+    background-color: sienna;
+    border: 1px groove black;
+    height: 21px;
+    width: 43px;
+    left: 43px;
+    top: 0px;
+}
+#office #office_closet_door {
+    position: absolute;
+    background-color: antiquewhite;
+    height: 44px;
+    width: 7px;
+    left: -4px;
+    top: 9px;
+}
+#office #office_foyer_door {
+    position: absolute;
+    background-color: antiquewhite;
+    height: 44px;
+    width: 7px;
+    left: -4px;
+    top: 78px;
+}
+#office #office_door_hall {
+    position: absolute;
+    background-color: antiquewhite;
+    height: 44px;
+    width: 7px;
+    left: 182px;
+    top: 132px;
+}
+#bathroom {     /*  82" left and right, 95" up and down hallway 47" up and down */
+    position: relative;
+    text-align: center;
+    grid-area: bathroom;
+    border: 1px groove black; 
+}
+#bathroom #bathroom_wall {   /* 28 up/down  */
+    position: absolute;
+    border: 1px groove black;
+    background-color: antiquewhite;
+    width: 37px;
+    height: 38px;
+    right: -2px;
+    bottom: 0px;
+}
+#bathroom #bathroom_sink {   /* 24 up/down 20 left/right */
+    position: absolute; 
+    border: 1px groove black;
+    background-color: beige;
+    border-radius: 0px 5px 5px 0px;
+    width: 26px;
+    height: 31px;
+    left: -1px;
+    top: 46px;
+}
+#bathroom #bathroom_sink_inner {   /* 17 up/down 11.5 left/right */
+    position: absolute; 
+    border: 1px groove black;
+    background-color: beige;
+    border-radius: 5px 5px 5px 5px;
+    width: 15px;
+    height: 22px;
+    left: 5px;
+    top: 4px;
+}
+#bathroom #bathtub {    /* 28 by 62 */
+    position: absolute; 
+    border: 1px groove black;
+    background-color: beige;
+    border-radius: 5px 0px 0px 5px;
+    width: 36px;
+    height: 80px;
+    right: -1px;
+    top: 0px;
+}
+#bathroom #toilet_tank {   /* 7 left/right   */
+    position: absolute; 
+    border: 1px groove black;
+    background-color: beige;
+    border-radius: 2px 2px 2px 2px;
+    width: 9px;
+    height: 23px;
+    left: 3px;
+    top: 10px;    
+}
+#bathroom #toilet_bowl {  /*  22 left/right  */
+    position: absolute; 
+    border: 1px groove black;
+    background-color: beige;
+    border-radius: 5px 91px 91px 5px;
+    width: 29px;
+    height: 23px;
+    left: 15px;
+    top: 10px;    
+}
+#bathroom #bathroom_door {  /* 29" wide  */
+    position: absolute;
+    background-color: antiquewhite;
+    height: 10px;
+    width: 39px;
+    left: 8px;
+    bottom: -5px;
+}
+#bathroom #bathroom_stairs {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column-gap: 0px;
+    width: 39px;
+    height: 46px;
+    position: absolute;
+    left: 61px;
+    bottom: -46px;
+}
+#bathroom #bathroom_closet {  /* 27" deep */
+    position: absolute;
+    border: 1px groove black;
+    background-color: antiquewhite;
+    height: 35px;
+    width: 23px;
+    left: 81px;
+    bottom: -1px;
+}
+#bathroom #bathroom_closet_door {
+    position: absolute;
+    background-color: antiquewhite;
+    height: 4px;
+    width: 18px;
+    left: 85px;
+    bottom: -3px;    
+    z-index: 2;
+}
+.stairs_bathroom {       /* each stair is 11.5" left to right, 35" up and down */
+    border: 1px groove black;
+    width: 13px;
+    height: 60px;
+}
+#bedroom {          /*  154" left to right, 130.5" up and down  */
+    grid-area: bedroom;
+    position: relative;
+    border: 1px groove black; 
+}
+#bedroom #bed {  /* 76" left and right to 80" up and down, 18" from left wall */
+    text-align: center;
+    background-color: #48D1CC;
+    padding: 30px 0px 0px 0px;
+    position: absolute;
+    border: 1px groove black;
+    border-radius: 0px 0px 10px 10px;
+    width: 99px;
+    height: 75px;
+    left: 23px;
+    top: -1px;
+}
+#bedroom #bed #bedsheet {
+    width: 100px;
+    height: 1px;
+    position: absolute;
+    background-color: black;
+    left: 0px;
+    top: 32px;    
+}
+#bedroom #bed #pillow1 {
+    background-color: #87CEFA;
+    position: absolute;
+    border: 1px groove black;
+    border-radius: 5px 5px 5px 5px;
+    width: 39px;
+    height: 24px;
+    left: 6px;
+    top: 1px;
+}
+#bedroom #bed #pillow2 {
+    background-color: #87CEFA;
+    position: absolute;
+    border: 1px groove black;
+    border-radius: 5px 5px 5px 5px;
+    width: 39px;
+    height: 24px;
+    left: 52px;
+    top: 1px;
+}
+#bedroom #bed #bed_endtable1 {
+    position: absolute;
+    border: 1px groove black;
+    width: 18px;
+    height: 18px;
+    left: -23px;
+    bottom: 83px;
+}
+#bedroom #bed #bed_endtable2 {
+    position: absolute;
+    border: 1px groove black;
+    width: 18px;
+    height: 18px;
+    left: 102px;
+    bottom: 83px;
+}
+#bedroom #bed .bed_lamp {
+    position: relative;
+    border: 1px groove black;
+    background-color: beige;
+    left: 3px;
+    width: 10px;
+    height: 10px;
+    border-radius: 100%;
+}
+#bedroom #dresser {  /* 17" left and right by 49" up and down, 40" from bottom */
+    position: absolute;
+    background-color: #E6BF83;
+    border: 1px groove black;
+    width: 22px;
+    height: 94px;
+    left: 175px;
+    bottom: 52px;
+}
+#bedroom #bed_chair {
+    position: absolute;
+    border: 1px groove black;
+    background-color: beige;
+    width: 15px;
+    height: 15px;
+    left: 176px;
+    bottom: 160px;
+    transform: rotate(45deg);
+}
+span {
+    position: relative;
+    display: inline-block;
+    right: 5px;
+    top: 20px;
+    font-size: 13px;
+    transform: rotate(90deg);
+}
+#bedroom #closet_door {   /* 34" from left wall, 30" wide door */
+    position: absolute;
+    background-color: antiquewhite;
+    width: 39px;
+    height: 6px;
+    left: 119px;
+    bottom: -4px;
+    z-index: 2;
+}
+#bedroom #entry_door_wood {
+    position: absolute;
+    border: 1px groove black;
+    background-color: antiquewhite;
+    height: 3px;
+    width: 45px;
+    left: -1px;
+    bottom: 5px;
+    z-index: 3;
+}
+#bedroom #entry_door_swing {
+    position: absolute;
+    border: 1px groove black;
+    background-color: antiquewhite;
+    height: 45px;
+    width: 45px;
+    left: 0px;
+    bottom: 5px;
+    border-radius: 0px 45px 0px 0px;
+}
+#bedroom #entry_door {   /* 3" from bottom wall, 30" wide door */
+    position: absolute;
+    background-color: antiquewhite;
+    width: 6px;
+    height: 49px;
+    left: -4px;
+    top: 129px;
+}
+#living {           /*  202" up and down bay window 90" extra to the left */
+    position: relative;
+    grid-area: living;
+    border: 1px groove black; 
+    text-align: center;
+}
+#living #big_bookshelf {  /*  38"  by 13"  */
+    position: absolute;
+    background-color: burlywood;
+    border: 1px groove black;
+    height: 17px;
+    width: 48px;
+    right: 1px;
+    top: -1px;
+}
+#living #little_bookshelf {  /*  33.5"  by 11.5"  */
+    position: absolute;
+    background-color: burlywood;
+    border: 1px groove black;
+    height: 15px;
+    width: 43px;
+    left: 73px;
+    top: 0px;
+}
+#living #sofa {  /*  93"  by 40.5"  */
+    position: absolute;
+    height: 53px;
+    width: 121px;
+    left: 95px;
+    top: 42px;
+    z-index: 4;    
+}
+#living #sofa #left_arm {
+    position: absolute;
+    background-color: moccasin;
+    border: 1px groove black;
+    height: 54px;
+    width: 15px;
+    left: 0px;
+    top: 0px;
+    z-index: 5;
+    border-radius: 5px 5px 5px 5px;
+}
+#living #sofa #right_arm {
+    position: absolute;
+    background-color: moccasin;
+    border: 1px groove black;
+    height: 54px;
+    width: 15px;
+    right: 0px;
+    top: 0px;
+    z-index: 5;
+    border-radius: 5px 5px 5px 5px;    
+}
+#living #sofa #left_seat {
+    position: absolute;
+    background-color: moccasin;
+    border: 1px groove black;
+    height: 34px;
+    width: 44px;
+    left: 16px;
+    top: 20px;
+    z-index: 5;
+    border-radius: 5px 5px 5px 5px;    
+}
+#living #sofa #right_seat {
+    position: absolute;
+    background-color: moccasin;
+    border: 1px groove black;
+    height: 34px;
+    width: 44px;
+    right: 16px;
+    top: 20px;
+    z-index: 5;
+    border-radius: 5px 5px 5px 5px; 
+}
+#living #sofa #left_back {
+    position: absolute;
+    background-color: moccasin;
+    border: 1px groove black;
+    height: 16px;
+    width: 54px;
+    left: 6px;
+    top: 6px;
+    z-index: 6;
+    border-radius: 5px 5px 5px 5px;     
+}
+#living #sofa #right_back {
+    position: absolute;
+    background-color: moccasin;
+    border: 1px groove black;
+    height: 16px;
+    width: 54px;
+    right: 6px;
+    top: 6px;
+    z-index: 6;
+    border-radius: 5px 5px 5px 5px; 
+}
+#living #sofa #back_spine {
+    position: absolute;
+    background-color: moccasin;
+    border: 1px groove black;
+    height: 6px;
+    width: 118px;
+    left: 0px;
+    top: 0px;
+    z-index: 5;
+    border-radius: 5px 5px 5px 5px; 
+}
+#living #rocking_chair {  /* 43 by 41  */
+    position: absolute;
+    background-color: moccasin;
+    border: 1px groove black;
+    height: 36px;
+    width: 53px;
+    right: 8px;
+    border-radius: 0px 35px 35px 0px;
+    padding: 20px 0px 0px 0px;
+    bottom: 6px;
+    transform: rotate(65deg);
+}
+#living #loveseat {   /*  57" up/down  by 41" left/right   */
+    position: absolute;
+    height: 70px;
+    width: 54px;
+    left: 22px;
+    top: 94px;
+    z-index: 4;
+}
+#living #loveseat #left_arm {
+    position: absolute;
+    background-color: moccasin;
+    border: 1px groove black;
+    height: 12px;
+    width: 55px;
+    right: -4px;
+    top: -2px;
+    border-radius: 5px 5px 5px 5px;
+    z-index: 4;    
+}
+#living #loveseat #right_arm {
+    position: absolute;
+    background-color: moccasin;
+    border: 1px groove black;
+    height: 12px;
+    width: 55px;
+    right: -4px;
+    bottom: -2px;
+    border-radius: 5px 5px 5px 5px;
+    z-index: 4;
+}
+#living #loveseat #seat {
+    position: absolute;
+    background-color: moccasin;
+    border: 1px groove black;
+    height: 48px;
+    width: 43px;
+    right: -2px;
+    top: 11px;
+    border-radius: 5px 5px 5px 5px;
+    z-index: 3;  
+}
+#living #loveseat #back {
+    position: absolute;
+    background-color: moccasin;
+    border: 1px groove black;
+    height: 62px;
+    width: 14px;
+    left: 4px;
+    top: 3px;
+    border-radius: 5px 5px 5px 5px;
+    z-index: 8;      
+}
+#living #loveseat #back_spine {
+    position: absolute;
+    background-color: moccasin;
+    border: 1px groove black;
+    height: 68px;
+    width: 4px;
+    left: 0px;
+    top: 0px;
+    border-radius: 5px 5px 5px 5px;
+    z-index: 7;      
+}
+#living #fireplace {  /*  10.5  68.5  */
+    position: absolute;
+    background-color: grey;
+    border: 1px groove black;
+    height: 14px;
+    width: 89px;
+    right: 62px;
+    bottom: 0px;    
+}
+#living #living_table_outer { /* 50 by 26, 4.5 margins */
+    position: absolute;
+    background-color: rosybrown;
+    border: 1px groove black;
+    height: 34px;
+    width: 65px;
+    left: 128px;
+    top: 116px;
+}
+#living #living_table_outer #living_table_inner {
+    position: relative;
+    background-color: antiquewhite;
+    border: 1px groove black;
+    height: 22px;
+    width: 53px;
+    left: 5px;
+    top: 5px;
+    
+}
+#living #cd_case {  /* 8 by 37  */
+    position: absolute;
+    background-color: rosybrown;
+    border: 1px groove black;
+    height: 48px;
+    width: 11px;
+    right: 0px;
+    top: 38px;
+}
+#living #tv_table {   /* 31.5" left/right  20" up/down  9 in from wall */
+    position: absolute;
+    background-color: burlywood;
+    border: 1px groove black;
+    height: 26px;
+    width: 41px;
+    left: 76px;
+    bottom: 12px;
+}
+#living #tv_table #television {  /*  44 by 6  */
+    position: absolute;
+    background-color: black;
+    border: 1px groove black;
+    height: 6px;
+    width: 51px;
+    left: -5px;
+    bottom: 12px;    
+    transform: rotate(30deg);
+}
+#living #living_side_table {  /*  19 by 13.5  */
+    position: absolute;
+    background-color: antiquewhite;
+    border: 1px groove black;
+    height: 17px;
+    width: 25px;
+    left: 49px;
+    bottom: 52px;
+    transform: rotate(20deg);
+    z-index: 4;
+}
+#living #bay_window {
+    position: absolute;
+    top: 18px;
+}
+#living #bay_window #rectangle1 {  /* 33.5"  */
+    position: absolute;
+    border: 1px groove black;
+    height: 43px;
+    width: 0px;
+    left: 72px;
+    top: -19px;
+    z-index: 2;
+}
+#living #bay_window #rectangle2 {  /* 39"  */
+    position: absolute;
+    border: 1px groove black;
+    height: 50px;
+    width: 0px;
+    left: 47px;
+    top: 9px;
+    transform: rotate(70deg);
+    z-index: 2;
+}
+#living #bay_window #rectangle3 {  /* 34.5"  */
+    position: absolute;
+    border: 1px groove black;
+    height: 45px;
+    width: 0px;
+    left: 12px;
+    top: 40px;
+    transform: rotate(30deg);    
+    z-index: 2;
+}
+#living #bay_window #rectangle4 {  /* 35.5"  */
+    position: absolute;
+    border: 1px groove black;
+    height: 46px;
+    width: 0px;
+    left: 0px;
+    top: 83px;
+    z-index: 2;
+}
+#living #bay_window #rectangle5 {  /* 35"  */
+    position: absolute;
+    border: 1px groove black;
+    height: 45px;
+    width: 0px;
+    left: 15px;
+    top: 127px;
+    transform: rotate(322deg);
+    z-index: 2;
+}
+#living #bay_window #rectangle6 {  /* 38"  */
+    position: absolute;
+    border: 1px groove black;
+    height: 43px;
+    width: 0px;
+    left: 51px;
+    top: 155px;
+    transform: rotate(290deg);
+    z-index: 2;
+}
+#living #bay_window #rectangle7 {  /* 33.5"  */
+    position: absolute;
+    border: 1px groove black;
+    height: 43px;
+    width: 0px;
+    left: 72px;
+    top: 184px;
+}
+#living #bay_window #clear_rectangle {
+    position: absolute;
+    background-color: antiquewhite;
+    height: 255px;
+    width: 74px;
+    left: -1px;
+    top: -21px;
+    z-index: 1;
+}
+#dining {       /*            155" up and down 157" left and right  */
+    position: relative;
+    grid-area: dining;
+    border: 1px groove black; 
+    width: 204px;
+}
+#dining #piano{        /* 23" up and down, 57" left and right, 50" from left side */
+    position: absolute;
+    text-align: center;
+    border: 1px groove black;
+    background-color: beige;
+    width: 74px;
+    height: 30px;
+    left: 65px;
+    top: -1px;
+}
+#dining #sideboard {   /* 21.5" up and down, 60" left and right, 49" from left side */
+    position: absolute;
+    text-align: center;
+    border: 1px groove black;
+    background-color: #70552F;
+    width: 78px;
+    height: 28px;
+    left: 63px;
+    bottom: -1px;
+}
+#dining #dining_table {   /* 42" up and down, 60.5" left and right  */
+    position: absolute;   /* 40" from left side, 25" from sideboard */
+    text-align: center;     /* 55" from built-ins  */
+    border: 1px groove black;
+    background-color: #B2854B;
+    width: 79px;
+    height: 55px;
+    left: 51px;
+    top: 87px;
+}
+#dining #dining_table #dining_chair1 {
+    position: relative;
+    border: 1px groove black;
+    background-color: beige;
+    top: -40px;
+    left: 15px;
+    width: 16px;
+    height: 16px;
+    border-radius: 100%; 
+}
+#dining #dining_table #dining_chair2 {
+    position: relative;
+    border: 1px groove black;
+    background-color: beige;
+    top: -58px;
+    left: 50px;
+    width: 16px;
+    height: 16px;
+    border-radius: 100%; 
+}
+#dining #dining_table #dining_chair3 {
+    position: relative;
+    border: 1px groove black;
+    background-color: beige;
+    top: 7px;
+    left: 50px;
+    width: 16px;
+    height: 16px;
+    border-radius: 100%; 
+}
+#dining #dining_table #dining_chair4 {
+    position: relative;
+    border: 1px groove black;
+    background-color: beige;
+    top: -11px;
+    left: 16px;
+    width: 16px;
+    height: 16px;
+    border-radius: 100%; 
+}
+#dining #dining_table #dining_chair5 {
+    position: relative;
+    border: 1px groove black;
+    background-color: beige;
+    top: -69px;
+    left: -22px;
+    width: 16px;
+    height: 16px;
+    border-radius: 100%; 
+}
+#dining #dining_table #dining_chair6 {
+    position: relative;
+    border: 1px groove black;
+        background-color: beige;
+    top: -89px;
+    left: 85px;
+    width: 16px;
+    height: 16px;
+    border-radius: 100%; 
+}
+#dining #built_ins { /* built-ins 75" up and down, 18" left and right */
+    position: absolute;            /*  13" from bottom wall */
+    text-align: center;
+    border: 1px groove black;
+    background-color: burlywood;
+    width: 23px;
+    height: 98px;
+    left: 204px;
+    bottom: 17px;
+    z-index: 2;
+}
+#dining #built_ins #built_ins_nowall {
+    position: absolute;
+    text-align: center;
+    background-color: antiquewhite;
+    width: 1px;
+    height: 96px;
+    left: -1px;
+    top: 1px;
+    z-index: 2;
+}
+#dining #dining_living_door_space {   /* 60" across */
+    position: absolute;
+    text-align: center;
+    background-color: antiquewhite;
+    width: 6px;
+    height: 78px;
+    left: -4px;
+    top: 63px;
+    z-index: 2;
+}
+#dining #dining_living_door_space #dining_room_door1  {   /* 30" across */
+    position: relative;
+    text-align: center;
+    border: 1px groove black;
+    background-color: beige;
+    width: 4px;
+    height: 39px;
+    left: 6px;
+    top: -39px;
+    z-index: 2;
+    transform: rotate(5deg);
+}
+#dining #dining_living_door_space #dining_room_door2  {   /* 30" across */
+    position: relative;
+    text-align: center;
+    border: 1px groove black;
+    background-color: beige;
+    width: 4px;
+    height: 39px;
+    left: 6px;
+    top: 39px;
+    z-index: 2;
+    transform: rotate(355deg);
+}
+#kitchen {          /* 153.5" up and down, 214" left and right closet 38" deep*/
+    grid-area: kitchen;    /* 136" from right side to end of stairway */
+    position: relative;
+    border: 1px groove black;
+    width: 277px;
+    left: 18px;
+    text-align: center;
+    font-size: 13px;
+}
+#kitchen #kitchen_objects {
+    position: absolute;
+}
+#kitchen #kitchen_objects #bottom_counter {  /* 25.5" up and down 194" left/right */
+    position: relative; 
+    text-align: center;  
+    border: 1px groove black;
+    background-color: beige;
+    width: 252px;
+    height: 33px;
+    left: 24px;
+    top: 171px;
+}
+#kitchen #kitchen_objects #side_counter_lower {   /* 26" up and down 25.5" left/right */
+    position: relative; 
+    text-align: center;  
+    border: 1px groove black;
+    background-color: beige;
+    width: 33px;
+    height: 33px;
+    left: 24px;
+    bottom: 29px;
+}    
+#kitchen #kitchen_objects #side_counter_upper {   /* 16" up and down */
+    position: relative; 
+    background-color: sienna;
+    border: 1px groove black;
+    width: 33px;
+    height: 21px;
+    left: 24px;
+    bottom: 86px;
+}    
+#kitchen #kitchen_objects #side_counter_lower #no_break {  
+    position: relative; 
+    background-color: beige;
+    width: 33px;
+    height: 1px;
+    left: 0px;
+    top: 33px;
+}    
+#kitchen #kitchen_objects #refrigerator {   /* 30" up/down  9" out from cabinet */
+    position: relative; 
+    text-align: center;  
+    border: 1px groove black;
+    background-color: silver;
+    border-radius: 0px 5px 5px 0px;
+    width: 44px;
+    height: 33px;
+    left: 24px;
+    top: -143px;
+} 
+#kitchen #kitchen_objects #oven {   /* 30 wide by 27 */
+    position: absolute; 
+    text-align: center;  
+    border: 1px groove black;
+    background-color: black;
+    border-radius: 5px 5px 0px 0px;
+    width: 39px;
+    height: 35px;
+    right: 8px;
+    bottom: 105px;
+}
+#kitchen #kitchen_objects #kitchen_sink {  /* 29 by 18 */
+    position: absolute; 
+    text-align: center;  
+    border: 1px groove black;
+    background-color: silver;
+    border-radius: 5px 5px 0px 0px;
+    width: 38px;
+    height: 23px;
+    right: 107px;
+    bottom: 110px;
+}
+#kitchen #kitchen_objects #storage_closet {  /* 24" deep  */
+    position: relative;
+    background-color: antiquewhite;
+    border: 1px groove black;
+    width: 22px;
+    height: 28px;
+    left: 0px;
+    bottom: 221px;
+}
+#kitchen #kitchen_objects #storage_closet #storage_closet_door { 
+    position: absolute;
+    background-color: antiquewhite;
+    width: 15px;
+    height: 7px;
+    left: 3px;
+    bottom: 24px;
+}
+#kitchen #kitchen_objects #charging_station {  
+    position: relative;
+    background-color: beige;
+    border: 1px groove black;
+    width: 31px;
+    height: 20px;
+    left: 24px;
+    bottom: 199px;   
+}
+#kitchen #kitchen_objects #breakfast_nook {}
+#kitchen #kitchen_objects #breakfast_nook #nook_cushions1 {/* 46" by 18" */
+    position: relative;     
+    border: 1px groove black;
+    background-color: #66CDAA;
+    width: 23px;
+    height: 60px;
+    left: 252px;
+    top: 14px;
+    border-radius: 5px 5px 5px 5px;
+}
+#kitchen #kitchen_objects #breakfast_nook #nook_cushions2 {  /* 45" by 18" */
+    position: relative;     
+    border: 1px groove black;
+    background-color: #66CDAA;
+    width: 56px;
+    height: 23px;
+    left: 195px;
+    top: -48px;
+    border-radius: 5px 5px 5px 5px;
+}
+#kitchen #kitchen_objects #breakfast_nook #nook_table {  /* 32" diamater */
+    position: relative;     
+    border: 1px groove black;
+    background-color: deepskyblue;
+    border-radius: 100%;
+    width: 42px;
+    height: 42px;
+    left: 213px;
+    top: -56px;    
+}
+#kitchen #bedroom_closet { /* 38" deep, 85" wide   19" to right, 36" to left of door*/
+    position: absolute;
+    border: 1px groove black;
+    width: 111px;
+    height: 34px;
+    left: 165px;
+    top: -1px;
+    text-align: center;
+    padding: 15px 0px 0px 0px;
+}
+#kitchen #bedroom_closet #top_counter_left {  /* 25" up/down  31"/25" left/right */
+    position: absolute;                 /*  21 pixels from left side  */
+    border: 1px groove black;
+    background-color: sienna;
+    width: 40px;
+    height: 32px;
+    left: -45px;
+    top: 49px;
+}
+#kitchen #bedroom_closet #top_counter_right {  
+    position: absolute;              
+    background-color: beige;
+    border: 1px groove black;
+    width: 32px;
+    height: 32px;
+    left: -4px;
+    top: 49px;
+}
+#kitchen #bedroom_closet #kitchen_door_hall {  /* 29" wide  */
+    position: absolute;
+    background-color: antiquewhite;
+    height: 10px;
+    width: 40px;
+    left: -151px;
+    top: -5px;
+}
+#kitchen #bedroom_closet #kitchen_door_dining {  /* 32" wide  */
+    position: absolute;
+    background-color: antiquewhite;
+    height: 43px;
+    width: 10px;
+    left: -159px;
+    bottom: -1px;
+}
+#kitchen #bedroom_closet #kitchen_wall {
+    width: 173px;
+    height: 1px;
+    position: absolute;
+    background-color: black;
+    left: -61px;
+    top: 49px;
+}
+#kitchen #bedroom_closet #kitchen_stairs {
+    position: absolute;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-column-gap: 0px;
+    width: 48px;
+    height: 49px;
+    left: -56px;
+    top: -1px;
+}
+#kitchen #bedroom_closet .stairs_kitchen {       /* each stair is 9.75" left to right */
+    border: 1px groove black;
+    width: 12px;
+    height: 49px;
+}
